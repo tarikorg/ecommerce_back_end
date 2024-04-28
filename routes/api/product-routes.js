@@ -23,14 +23,15 @@ router.get('/:id', async (req, res) => {
   const id = req.params.id
 
   try {
+    //assign the targeted product to a const , make sure to include its associated Category and Tag data
     const product = await Product.findByPk(id, {
       include: [{ model: Category }, { model: Tag, through: ProductTag }]
     })
-
+    //if product dont exists
     if (!product) {
       return res.json({ message: 'Product not found' })
     }
-
+   //display the chosen product if exist
     res.json(product)
 
 

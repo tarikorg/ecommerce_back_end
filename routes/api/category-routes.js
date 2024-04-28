@@ -25,11 +25,11 @@ router.get('/:id', async (req, res) => {
     const category = await Category.findByPk(id,{
       include: [{model: Product}]
     })
-
+   //if there is no category
     if(!category){
      return res.json({message: 'Category NOT FOUND'})
     }
-    
+    //display
     res.json(category)
   
    }catch(err){
@@ -44,11 +44,12 @@ router.post('/', async (req, res) => {
   const { category_name } = req.body
 
   try{
+    //create a new category with the given input through req.body
     const category = await Category.create({
     
       category_name
     })
-
+   //display the new category
     res.json(category)
     console.log('a category has been created: '+category)
   }catch(err){
