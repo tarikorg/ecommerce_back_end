@@ -39,7 +39,7 @@
 
   ## Deployment
   - Link to my repo: https://github.com/tarikorg/ecommerce_back_end
-  - Deployed link: [WALKTHROUGH](https://drive.google.com/file/d/1D6kkFzZxMoI0mZQH1lL1h-nMHvLg2Pwr/view?usp=sharing)
+  - Deployed link: [WALKTHROUGH](https://drive.google.com/file/d/1wxT2gRiGyHnvAtmBNb_Vdy7Iy6wK-NF3/view?usp=sharing)
    
   ## Questions
   - Github username: https://github.com/tarikorg
